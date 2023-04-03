@@ -1,0 +1,26 @@
+[{
+  "id": "6404d481d54af6a7a9c8fced",
+  "name": "Maison",
+  "color": "#050505",
+  "icon": "FaHome"
+},{
+  "id":  "6404d4c2b15091b4865e7ee9",
+  "name": "Santé",
+  "color": "#050505",
+  "icon": "Fabag"
+},{
+  "id": "6404d529723e4b02da0be8b7",
+  "name": "Peau",
+  "color": "#050505",
+  "icon": "FaSkin"
+},{
+  "id":"6404d54dddb2229f4f6f4a53",
+  "name": "Cheuveux",
+  "color": "#050505",
+  "icon": "FaHair"
+},{
+  "id": "6404e53c0b637f4509567957",
+  "name": "Sac",
+  "color": "#050505",
+  "icon": "FaBag"
+}]

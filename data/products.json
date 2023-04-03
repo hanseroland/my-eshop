@@ -1,0 +1,100 @@
+[
+  {
+  "id":  "6404e5a867ec77049ca23175",
+  "name": "sac à main",
+  "description": "Sac de soirée",
+  "richDescription": "lorem ipsum",
+  "image": "https://images.pexels.com/photos/208483/pexels-photo-208483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "images": [],
+  "brand": "MK",
+  "price": 400,
+  "category":  "6404e53c0b637f4509567957",
+  "countInStock": 100,
+  "rating": 5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": {
+      "$numberLong": "1678042536078"
+    }
+  }
+},
+{
+  "id": "6404e81267ec77049ca23178",
+  "name": "sac",
+  "description": "Sac de soirée",
+  "richDescription": "lorem ipsum",
+  "image": "https://images.pexels.com/photos/208483/pexels-photo-208483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "images": [],
+  "brand": "MK",
+  "price": 400,
+  "category":"6404e53c0b637f4509567957",
+  "countInStock": 100,
+  "rating": 5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": {
+      "$numberLong": "1678043154459"
+    }
+  }
+},
+{
+  "id":  "6413942ab924bf85476fdb75",
+  "name": "supe",
+  "description": "plage",
+  "richDescription": "lorem ipsum",
+  "image": "https://images.pexels.com/photos/208483/pexels-photo-208483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "images": [],
+  "brand": "H&M",
+  "price": 400,
+  "category": "6404e53c0b637f4509567957",
+  "countInStock": 100,
+  "rating": 5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": {
+      "$numberLong": "1679004714303"
+    }
+  }
+},
+{
+  "id":"641f8471173761714d0503bf",
+  "name": "savon solide",
+  "description": "savon pour cheveux abîmés ",
+  "richDescription": "lorem ipsum dolor",
+  "image": "https://images.pexels.com/photos/208483/pexels-photo-208483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "images": [],
+  "brand": "etounature",
+  "price": 5000,
+  "category":"6404d481d54af6a7a9c8fced",
+  "countInStock": 10,
+  "rating": 5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": {
+      "$numberLong": "1679787121938"
+    }
+  }
+},
+{
+  "id":"641f94f892bc35cf0fdc966f",
+  "name": "savon solide 2",
+  "description": "savon pour cheveux abîmés ",
+  "richDescription": "lorem ipsum dolor",
+  "image": "https://images.pexels.com/photos/208483/pexels-photo-208483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "images": [
+    "http://localhost:5000/public/uploads/shop_117803.png-1679820885732.png",
+    "http://localhost:5000/public/uploads/shop_online_store_ecommerce_icon_192430.png-1679820885733.png",
+    "http://localhost:5000/public/uploads/undraw_enter_uhqk.png-1679820885733.png"
+  ],
+  "brand": "etounature",
+  "price": 5000,
+  "category":  "6404d481d54af6a7a9c8fced",
+  "countInStock": 10,
+  "rating": 5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": {
+      "$numberLong": "1679791352073"
+    }
+  }
+}]
