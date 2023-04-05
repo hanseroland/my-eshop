@@ -20,7 +20,8 @@ export default function SearcheBar(props) {
     <Center> 
       <View
         style={{
-        marginTop:90,
+        marginTop:50,
+        paddingBottom:5
        }}
       >
         <VStack w="100%" space={5} alignSelf="center">

@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react'
 import { 
     View, 
     StyleSheet,
-    FlatList,
     Dimensions
 } from 'react-native';
 import {Container,Center,Text, ScrollView} from 'native-base'
@@ -19,7 +18,7 @@ const categoriesData = require('../../data/categories.json');
 
 var {width,height} = Dimensions.get("window");
 
-export default function ProductContainer() {
+export default function ProductContainer(props) {
 
     const [products,setProducts] = useState([]);
     const [productsFiltered,setProductsFiltered] = useState([]);
@@ -38,6 +37,7 @@ export default function ProductContainer() {
       setProductsCtg(data);
       setActive(-1);
       setInitialState(data);
+     
       
       return () => {
         setProducts([]);
@@ -80,7 +80,7 @@ export default function ProductContainer() {
     }
     
   return (
-    <Center>
+    <Center backgroundColor="#fff" >
         <Container style={styles.container} >
               <SearcheBar
                 onFocus={openList}
@@ -90,6 +90,7 @@ export default function ProductContainer() {
               /> 
               {focus == true ? (
                 <SearchedProduct
+                  navigation={props.navigation}
                   productsFiltered={productsFiltered}
                 />
               ):(
@@ -113,6 +114,7 @@ export default function ProductContainer() {
                                {productsCtg.map((item)=>{
                                  return(
                                   <ProductList
+                                    navigation={props.navigation}
                                     key={item.id}
                                     item={item}
                                   
@@ -160,7 +162,6 @@ const styles =StyleSheet.create({
   container:{
       width:width,
       alignItems:'center',
-      flex:1
   },
   listContainer:{
     height:height,

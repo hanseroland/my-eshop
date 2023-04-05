@@ -1,5 +1,5 @@
 import React from 'react'
-import { View,StyleSheet,Dimensions } from 'react-native';
+import { View,StyleSheet,Dimensions, TouchableOpacity } from 'react-native';
 import {Divider,Center,Box,HStack,VStack,Pressable,Text,Avatar, ScrollView} from 'native-base'
 
 var {width} = Dimensions.get("window")
@@ -13,7 +13,13 @@ const  SearchedProduct = (props) => {
            
             {productsFiltered.length > 0 ? (
                 productsFiltered.map((item)=>(
-                <Pressable key={item.id}  >
+                <TouchableOpacity 
+                  key={item.id} 
+                  onPress={()=>
+                    props.navigation.navigate("Detail Produit",{item:item})
+                  }
+
+                >
                   <Box
                      pl="4" pr="2" py="2"  
                     > 
@@ -39,7 +45,7 @@ const  SearchedProduct = (props) => {
                       </HStack>
                       <Divider mt={1}  />
                 </Box>
-                </Pressable>
+                </TouchableOpacity>
                
                 ))
             ):(

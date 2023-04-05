@@ -1,7 +1,13 @@
 import { StyleSheet, View,LogBox } from 'react-native';
 import { NativeBaseProvider } from 'native-base';
-import ProductContainer from './Screens/Products/ProductContainer';
+import { NavigationContainer } from '@react-navigation/native';
 import Header from './shared/Header';
+
+
+
+//navigators
+import Main from './Navigators/Main';
+
 
 //Screens
 //LogBox.ignoreAllLogs(true);
@@ -9,10 +15,9 @@ import Header from './shared/Header';
 export default function App() {
   return (
     <NativeBaseProvider>
-      <View style={styles.container}>
-       
-        <ProductContainer/>
-      </View>
+      <NavigationContainer>
+          <Main/>
+      </NavigationContainer>
     </NativeBaseProvider>
    
   );

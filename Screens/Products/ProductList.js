@@ -11,7 +11,12 @@ export default function ProductList(props) {
 
     const {item} = props;
   return (
-    <TouchableOpacity  style={{width:SIZE+20}} >
+    <TouchableOpacity  
+      style={{width:SIZE+20}} 
+      onPress={()=>
+        props.navigation.navigate("Detail Produit",{item:item})
+      }
+      >
       <View style={{width:width}} >
             <ProductCard
               {...item}
